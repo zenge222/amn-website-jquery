@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>阿姆尼软件</title>
+    <link rel="stylesheet" href="css/fullPage.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/fullpage.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">   -->
+    <link rel="stylesheet" href="css/swiper.min.css">    
+    <!-- <script src="https://unpkg.com/swiper/js/swiper.js"> </script>   -->
+    <script src="js/swiper.min.js"> </script>
+    <link href="css/video-js.min.css" rel="stylesheet">
+    <script src="js/video.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+    <div id="header_bar" class="header_bar">
+        <div id="left_bar" class="left_bar">
+            <img id="logo" src="./images/logo.png" alt />
+        </div>
+            <!-- <ul id="fp-nav">
+                
+           </ul> -->
+           <ul id="menu">
+            　　<li data-menuanchors='page1'><a href="#page1">首页</a></li>
+            　　<li data-menuanchors='page2'><a href="#page2">关于我们</a></li>
+            　　<li data-menuanchors='page3'><a href="#page3">团队介绍</a></li>
+                <li data-menuanchors='page4'><a href="#page4">案例展示</a></li>
+                <li data-menuanchors='page5'><a href="#page5">业务介绍</a></li>
+                <li data-menuanchors='page6'><a href="#page6">联系我们</a></li>
+            </ul>
+    </div>
+    <div id="dowebok">
+        <div class="section home" style="background-color: #fff!important;">
+                <div class="center_container">
+                        <div class="top_item">
+                          <h3>AMNI</h3>
+                          <div class="amn_group">
+                            <div class="amn_item">
+                              <h3>阿姆尼</h3>
+                              <div class="line"></div>
+                              <p>助力企业实现数字化转型和商业创新</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="home_list">
+                            <ul id="home_ul"></ul>
+                          <!-- <ul>
+                            <li v-for="(item,index) in homeList" :key="index">
+                              <img :src="item.icon" />
+                              <p v-text="item.title"></p>
+                            </li>
+                          </ul> -->
+                        </div>
+                      </div>
+        </div>
+        <div class="section about_us">
+                <div class="about_container">
+                        <div class="about_content">
+                          <div class="about_left">
+                            <img src="./images/about_us_pic1.png" alt />
+                            <div class="left_title">
+                              <h3>发展历程</h3>
+                              <h4>DEVELOPMENT COURSE</h4>
+                            </div>
+                            <div class="course_group">
+                              <div class="course_item">
+                                <div class="circle"></div>
+                                <p>2018年5月 阿姆年软件开发有限公司成立于宁波。</p>
+                              </div>
+                              <img class="line" src="./images/about_line.png" alt />
+                              <div class="course_item">
+                                <div class="circle"></div>
+                                <p>2018年6月 企业成功组建第一支达20余人的团队。</p>
+                              </div>
+                              <img class="line" src="./images/about_line.png" alt />
+                              <div class="course_item">
+                                <div class="circle"></div>
+                                <p>2018年9月 开启第一个项目——嘉美美家官网定制，打开了家庭服务领域的大门</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="about_right">
+                            <h3>专注于为客户提供专业、 优质、全面安全的产品</h3>
+                            <div class="video">
+                              <img src="./images/about_us_pic2.png" alt />
+                              <div class="video_mask">
+                                <img id="play" class="play" src="./images/play.png" alt />
+                              </div>
+                            </div>
+                            <p>阿姆尼软件开发有限公司，是一家专业的软件开发及信息化咨询服务提供商。业务涵盖软件开发，移动端应用开发，品牌网站建设，管理系统开发，信息化建设咨询等众多领域。目前，阿姆尼软件与多家企业达成合作，为客户提供专业及时的服务支持。信息化时代阿姆尼软件致力于为企业提供多元化、全方位的软件开发服务。选择阿姆尼，助力企业实现数字化转型和商业创新。</p>
+                          </div>
+                        </div>
+                      </div>
+        </div>
+        <div class="section team_intr">
+                <div class="team_container">
+                        <div class="team_title">
+                          <h3 style="color:#fff;">团队介绍</h3>
+                          <h4>/Team presentation</h4>
+                        </div>
+                        <div id="team_content">
+                            <!--     @mouseover="selectStyle(item)"
+                            @mouseout="outStyle(item)" -->
+                          <!-- <div
+                            class="team_item"
+                          >
+                            <div class="item_d" v-show="!item.hover">
+                              <img src="./images/team_border.png" />
+                              <img class="item_icon" :src="item.icon" />
+                            </div>
+                            <div class="item_a" v-show="item.hover">
+                              <img src="./images/team_border_a.png" />
+                              <img class="item_icon" :src="item.icon2" />
+                              <a class="intr" v-text="item.intr">123</a>
+                            </div>
+                            <p :class="{'active':item.hover}" v-text="item.title"></p>
+                          </div> -->
+                        </div>
+                      </div>
+        </div>
+        <div class="section case_presentation">
+            <div class="case_container">
+                <div class="team_title">
+                    <h3>案例展示</h3>
+                    <h4>/Case presentation</h4>
+                </div>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                       <div class="banner_content" id="banner_content"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner_content" id="banner_content2"></div>
+                    </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="section bus_intr">
+            <div class="bus_container">
+                    <div class="team_title">
+                        <h3>业务介绍</h3>
+                        <h4>/Business Introduction</h4>
+                    </div>
+                    <!--   @mouseover="selectStyle(item)"
+                        @mouseout="outStyle(item)" -->
+                    <div id="bus_list" class="bus_list">
+                        <!-- <div
+                        :class="{'bus_item':true,'active':item.hover}"
+                        v-for="(item,index) in busList"
+                        :key="index"
+                      
+                        >
+                        <div class="item_top">
+                            <img :src="item.hover?item.icon2:item.icon" alt />
+                            <h3 v-text="item.title1"></h3>
+                            <p v-text="item.title2"></p>
+                        </div>
+                        <div class="item_btm">
+                            <h3 v-text="item.intr"></h3>
+                        </div>
+                        </div> -->
+                    </div>
+             </div>
+        </div>
+
+        <div class="section contace_us">
+            <a href="#page3"></a>
+            <div class="us_container">
+                    <div class="team_title">
+                        <h3>联系我们</h3>
+                        <h4>/Contact us</h4>
+                    </div>
+                    <div class="us_from">
+                        <div class="from_item from_left">
+                        <h3>Contact</h3>
+                        <h4>联系方式</h4>
+                        <div class="text_list">
+                            <p>地址：浙江省宁波市鄞州区金融大厦B座308室</p>
+                            <p>电话：0574-28886049</p>
+                            <p>邮箱：amunirj@163.com</p>
+                            <img src="./images/QR_code.png" alt />
+                        </div>
+                        </div>
+                        <div class="from_item from_right">
+                        <h3>We'll get back to you</h3>
+                        <h4>稍后联系你</h4>
+                        <div class="from_input">
+                            <div class="input_item">
+                            <span>手机</span>
+                            <!-- <el-input class="el_input" v-model="userInfo.phone" placeholder="请输入手机号"></el-input> -->
+                            <input type="text" class="el_input" placeholder="请输入手机号">
+                            </div>
+                            <div class="input_item">
+                            <span>称呼</span>
+                            <input type="text" class="el_input" placeholder="请输入称呼">
+                            <!-- <el-input class="el_input" v-model="userInfo.name" placeholder="请输入称呼"></el-input> -->
+                            </div>
+                        </div>
+                            <!-- <el-button class="from_submit">发送</el-button> -->
+                            <button class="from_submit">发送</button>
+                        </div>
+                    </div>
+                    </div>
+                     <div class="footer_item">
+                        <p>版权所有：</p>
+                        <p style="padding-right:4px;">©</p>
+                        <p style="padding-right:20px;">2018阿姆尼软件开发有限公司</p>
+                        <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">浙ICP备19018505号-1</a>
+                    </div>
+        </div>
+       
+    </div>
+    <div id="mask" class="mask display_none">
+        <div class="mask_bg">
+            <div class="close_iocn"><img src="./icons/close.png" alt=""></div>
+        <div class="content">
+             <video id="my-video" class="video-js" controls preload="auto" width="960" height="400"
+                poster="./images/about_us_pic2.png" loop="true" data-setup="{}">
+              <source src="https://file.omnrj.com/videoFile/amn.mp4" type="video/mp4">
+              <p class="vjs-no-js"> To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a> </p>
+            </video>
+        </div>  
+    </div>  
+    </div>
+</body>
+<script>
+   const barList= [
+        { title: "首页", path: "Home" },
+        { title: "关于我们", path: "AboutUs" },
+        { title: "团队介绍", path: "TeamIntr" },
+        { title: "案例展示", path: "CasePresentation" },
+        { title: "业务介绍", path: "BusIntr" },
+        { title: "联系我们", path: "ContaceUs" }
+      ];
+ const homeList = [
+    {
+        title: "软件开发",
+        icon: "./icons/home1.png",
+        path: ""
+    },
+    {
+        title: "移动端应用开发",
+        icon: "./icons/home2.png",
+        path: ""
+    },
+    {
+        title: "品牌网站建设",
+        icon: "./icons/home3.png",
+        path: ""
+    },
+    {
+        title: "管理系统开发",
+        icon: "./icons/home4.png",
+        path: ""
+    },
+    {
+        title: "信息化建设",
+        icon: "./icons/home5.png",
+        path: ""
+    }
+]   
+const teamList= [
+        {
+          title: "研发部",
+          icon: "./icons/team1.png",
+          icon2: "./icons/team1_a.png",
+          intr:
+            "我们是一支具备资深经验的团队，成员多来自于国内外知名的百强企业，如阿里巴巴、戴尔等。我们拥有包括系统架构师、软件工程师、测试工程师等多种职位，保证专职专项及能力最大化。",
+          hover: false
+        },
+        {
+          title: "产品部",
+          icon: "./icons/team2.png",
+          icon2: "./icons/team2_a.png",
+          intr:
+            "我们是一支具备专业能力的团队，成员拥有专业的PMP管理证书，在产品设计、项目管理等领域具备相关的专业技术知识，且得益于互联网行业的多年从业经验，对行业趋势有一定的预测能力。",
+          hover: false
+        },
+        {
+          title: "设计部",
+          icon: "./icons/team3.png",
+          icon2: "./icons/team3_a.png",
+          intr:
+            "我们是一支富有创新精神的团队，成员多为90后，毕业于知名的艺术学府，不局限于传统设计理念，富有强烈的探索精神。",
+          hover: false
+        },
+        {
+          title: "运营部",
+          icon: "./icons/team4.png",
+          icon2: "./icons/team4_a.png",
+          intr:
+            "我们是一支具有高执行力的团队，成员多来自于大型互联网企业，具备高效的，敏捷的执行力。专业的领域涵盖多行业，多纬度。同时我们配备5S标准的客服团队为企业客户提供多元化服务。",
+          hover: false
+        }
+      ]
+const caseList= [
+    {
+        title1: "UI DESIGN",
+        title2: "UI用户界面设计",
+        pic: "./images/case_banner1.png",
+        subTitle: "量身为用户打造符合其品牌形象的用户界面",
+        into: "一个优秀的用户体验界面可以帮助用户对公司建立深刻的品牌印象"
+    },
+    {
+        title1: "UE DESIGN",
+        title2: "UE交互交流设计",
+        pic: "./images/case_banner2.png",
+        subTitle: "为用户创造优秀的交互流程框架",
+        into: "一款软件是否能长期吸引用户往往取决于产品的用户可用性"
+    },
+    {
+        title1: "BRAND DESIGN",
+        title2: "品牌设计",
+        pic: "./images/case_banner3.png",
+        subTitle: "为用户创造独一无二的品牌",
+        into:
+        "品牌，决定着对外的形象，如何让人们第一眼就知道我们从事着的行业和企业文化是我的目的"
+    }
+];
+const caseList2= [
+    {
+        title1: "BIG DATA ANALYTICE",
+        title2: "大数据分析",
+        pic: "./images/case_banner4.png",
+        subTitle: "构建数据支持定制化功能以及可视化效果",
+        into: "适合各类企业与部门的数据分析，从而减少市场风险并在一定情形下预测未来市场趋势"
+    },
+    {
+        title1: "CORPORATE WEB SITE",
+        title2: "企业官网定制",
+        pic: "./images/case_banner5.png",
+        subTitle: "从浏览者视觉体验入手加强客户服务体验",
+        into: "企业官网代表企业的网络形象，一个美观且功能完善的企业官网有利于吸引潜在客户"
+    },
+    {
+        title1: "Development of enterprise management system",
+        title2: "企业管理系统开发",
+        pic: "./images/case_banner6.png",
+        subTitle: "通过对管理系统构建完整企业管理流程",
+        into:
+        "包括客户关系管理、薪酬绩效、人才引进等多种系统的建立，达到企业管理的高效化，实现利润倍增"
+    }
+]
+const busList= [
+    {
+        title1: "软件开发",
+        title2: "Software Development",
+        intr: "行业应用开发；APP及管理系统开发；企业官网订制",
+        icon: "./icons/bus_icon1.png",
+        icon2: "./icons/bus_icon1_a.png",
+        hover: false
+    },
+    {
+        title1: "系统维护",
+        title2: "System maintenance",
+        intr: "管理平台运维；数据库维护",
+        icon: "./icons/bus_icon2.png",
+        icon2: "./icons/bus_icon2_a.png",
+        hover: false
+    },
+    {
+        title1: "产品测试",
+        title2: "Product testing",
+        intr: "应用软件及平台测试；产品测试；提供专业解决方案",
+        icon: "./icons/bus_icon3.png",
+        icon2: "./icons/bus_icon3_a.png",
+        hover: false
+    },
+
+    {
+        title1: "运营服务",
+        title2: "Operational Services",
+        intr: "信息化咨询服务；线上营销；运营推广；数据采集及分析",
+        icon: "./icons/bus_icon4.png",
+        icon2: "./icons/bus_icon4_a.png",
+        hover: false
+    }
+]
+$(function(){
+    // getHeaderList();
+    // home列表
+    getHomeList();
+    // 团队介绍列表
+    getTeamList();
+    getCaseList(caseList,'#banner_content');
+    getCaseList(caseList2,'#banner_content2');
+    getBisList();
+
+    //---------------------- header
+   
+    function getHeaderList(){
+        let html = '';
+        barList.forEach((val,index)=>{
+            html+=`
+           
+            <li
+            class="bar_item"
+            data-menuanchors='page${index}'
+      ><a href="#page${index}">${val.title}</a></li>
+            
+            `
+        })
+        $('#menu').html(html);
+    };
+    // $(".bar_item").click(function (e) {
+    //     // $(this).addClass("active").siblings().removeClass("active");
+    //     console.log($(this).index());
+    // })
+   
+    $('#play').on('click',function(e){
+        $('#mask').removeClass('display_none');
+        myPlayer.play();
+    })
+    $('.close_iocn').on('click',function(e){
+        $('#mask').addClass('display_none');
+        myPlayer.pause()
+    })
+    // 视频
+     //设置中文
+     videojs.addLanguage('zh-CN', {
+			  "Play": "播放",
+			  "Pause": "暂停",
+			  "Current Time": "当前时间",
+			  "Duration": "时长",
+			  "Remaining Time": "剩余时间",
+			  "Stream Type": "媒体流类型",
+			  "LIVE": "直播",
+			  "Loaded": "加载完毕",
+			  "Progress": "进度",
+			  "Fullscreen": "全屏",
+			  "Non-Fullscreen": "退出全屏",
+			  "Mute": "静音",
+			  "Unmute": "取消静音",
+			  "Playback Rate": "播放速度",
+			  "Subtitles": "字幕",
+			  "subtitles off": "关闭字幕",
+			  "Captions": "内嵌字幕",
+			  "captions off": "关闭内嵌字幕",
+			  "Chapters": "节目段落",
+			  "Close Modal Dialog": "关闭弹窗",
+			  "Descriptions": "描述",
+			  "descriptions off": "关闭描述",
+			  "Audio Track": "音轨",
+			  "You aborted the media playback": "视频播放被终止",
+			  "A network error caused the media download to fail part-way.": "网络错误导致视频下载中途失败。",
+			  "The media could not be loaded, either because the server or network failed or because the format is not supported.": "视频因格式不支持或者服务器或网络的问题无法加载。",
+			  "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "由于视频文件损坏或是该视频使用了你的浏览器不支持的功能，播放终止。",
+			  "No compatible source was found for this media.": "无法找到此视频兼容的源。",
+			  "The media is encrypted and we do not have the keys to decrypt it.": "视频已加密，无法解密。",
+			  "Play Video": "播放视频",
+			  "Close": "关闭",
+			  "Modal Window": "弹窗",
+			  "This is a modal window": "这是一个弹窗",
+			  "This modal can be closed by pressing the Escape key or activating the close button.": "可以按ESC按键或启用关闭按钮来关闭此弹窗。",
+			  ", opens captions settings dialog": ", 开启标题设置弹窗",
+			  ", opens subtitles settings dialog": ", 开启字幕设置弹窗",
+			  ", opens descriptions settings dialog": ", 开启描述设置弹窗",
+			  ", selected": ", 选择",
+			  "captions settings": "字幕设定",
+			  "Audio Player": "音频播放器",
+			  "Video Player": "视频播放器",
+			  "Replay": "重播",
+			  "Progress Bar": "进度小节",
+			  "Volume Level": "音量",
+			  "subtitles settings": "字幕设定",
+			  "descriptions settings": "描述设定",
+			  "Text": "文字",
+			  "White": "白",
+			  "Black": "黑",
+			  "Red": "红",
+			  "Green": "绿",
+			  "Blue": "蓝",
+			  "Yellow": "黄",
+			  "Magenta": "紫红",
+			  "Cyan": "青",
+			  "Background": "背景",
+			  "Window": "视窗",
+			  "Transparent": "透明",
+			  "Semi-Transparent": "半透明",
+			  "Opaque": "不透明",
+			  "Font Size": "字体尺寸",
+			  "Text Edge Style": "字体边缘样式",
+			  "None": "无",
+			  "Raised": "浮雕",
+			  "Depressed": "压低",
+			  "Uniform": "均匀",
+			  "Dropshadow": "下阴影",
+			  "Font Family": "字体库",
+			  "Proportional Sans-Serif": "比例无细体",
+			  "Monospace Sans-Serif": "单间隔无细体",
+			  "Proportional Serif": "比例细体",
+			  "Monospace Serif": "单间隔细体",
+			  "Casual": "舒适",
+			  "Script": "手写体",
+			  "Small Caps": "小型大写字体",
+			  "Reset": "重启",
+			  "restore all settings to the default values": "恢复全部设定至预设值",
+			  "Done": "完成",
+			  "Caption Settings Dialog": "字幕设定视窗",
+			  "Beginning of dialog window. Escape will cancel and close the window.": "开始对话视窗。离开会取消及关闭视窗",
+			  "End of dialog window.": "结束对话视窗"
+			});
+		
+			var myPlayer = videojs('my-video');
+			videojs("my-video").ready(function(){
+				var myPlayer = this;
+				// myPlayer.play();
+			});
+    //-------------------------- 首页 --------------------------
+    $('#dowebok').fullpage({
+        sectionsColor:["#caf9a3","#90ac32","#ac932a"],
+　　　　 anchors : ['page1','page2','page3','page4','page5','page6'],
+　　　　 menu : '#menu',
+        onLeave: function(anchorLink, index){
+        console.log(index);
+        let index2 = index==1?0:index-1;
+            $('#menu li').eq(index2).addClass('active_a').siblings().removeClass('active_a');
+            if(index2==0){
+                $('#header_bar').removeClass('bg_color');
+                $('#logo').attr('src', './images/logo.png');
+                return;
+            }
+            $('#header_bar').addClass('bg_color');
+            $('#logo').attr('src', './images/logo2.png');
+        },
+　　});
+    $('#menu').find("li").first().addClass("active_a");
+    $('#menu li a').on('click',function(e){
+        let index = $(this).parent().index();
+        console.log(index)
+        $(this).parent().addClass("active_a").siblings().removeClass('active_a');
+        if(index==0){
+            console.log( $('#header_bar'))
+            $('#header_bar').removeClass('bg_color');
+            $('#logo').attr('src', './images/logo.png');
+            return;
+        }
+        $('#header_bar').addClass('bg_color');
+        $('#logo').attr('src', './images/logo2.png');
+    });
+
+    function getHomeList(){
+        let html = '';
+        homeList.forEach(val=>{
+            html+=`
+            <li>
+                <img src="${val.icon}" />
+                <p>${val.title}</p>
+            </li>
+            `
+        })
+        $('#home_ul').html(html);
+    };
+
+    // ----------------------- 关于我们 -----------------------
+    // $('.team_item')[0]
+    function getTeamList(){
+        let html = '';
+        teamList.forEach(val=>{
+            html+=
+            `
+            <div class="team_item">
+                <div class="item_d">
+                    <img src="./images/team_border.png" />
+                    <img class="item_icon" src="${val.icon}" />
+                </div>
+                <div class="item_a">
+                    <img src="./images/team_border_a.png" />
+                    <img class="item_icon" src="${val.icon2}" />
+                    <a class="intr">${val.intr}</a>
+                </div>
+                <p>${val.title}</p>
+            </div>
+            `
+        });
+        $('#team_content').html(html);
+    }
+    $(".team_item").hover(function (e) {
+        $(this).find('.item_d').css("display","none");
+        $(this).find('.item_a').css("display","block");
+        $(this).find('p').css("color","#60b4f4");
+    },function(){
+        $(this).find('.item_d').css("display","block");
+        $(this).find('.item_a').css("display","none");
+        $(this).find('p').css("color","#fff");
+    })
+
+    // ----------------------- 案例展示
+    var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal', // 垂直切换选项
+    loop: true, // 循环模式选项
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+    // 如果需要前进后退按钮
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
+    
+    // 如果需要滚动条
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
+  });
+  function getCaseList(list,id){
+    let html = '';
+    list.forEach(val=>{
+            html+=
+            `
+            <div class="banner_group">
+                <div class="top_title">
+                  <h3>${val.title1}</h3>
+                  <p>${val.title2}</p>
+                </div>
+                <img src="${val.pic}" alt />
+                <div class="bottom_title">
+                  <h3>${val.subTitle}</h3>
+                  <p">${val.into}</p>
+                </div>
+              </div>
+            `
+        });
+        $(id).html(html);
+  } 
+  //-------------------------- bis
+  function getBisList(){
+    let html = '';
+    busList.forEach(val=>{
+            html+=
+            `
+            <div
+                class="bus_item"
+                >
+                <div class="item_top">
+                    <img class="img_a" src="${val.icon}" alt />
+                    <img class="img_b display_none" src="${val.icon2}" alt />
+                    <h3>${val.title1}</h3>
+                    <p>${val.title2}</p>
+                </div>
+                <div class="item_btm">
+                    <h3>${val.intr}</h3>
+                </div>
+                </div>
+            `
+        });
+        $('#bus_list').html(html);
+  };
+  $(".bus_item").hover(function () {
+    $(this).addClass('active');
+    // $(this).find('.item_top').find('img.img_a').css("display","none")
+    $(this).find('.item_top').find('img.img_a').addClass('display_none');
+    $(this).find('.item_top').find('img.img_b').addClass('display_block');
+    // $('.img_a').css("display","none");
+    // $('.img_b').css("display","blcok");
+  },function(){
+    $(this).removeClass('active');
+    // $(this).find('.item_top').find('img.img_a').css("display","blcok")
+    $(this).find('.item_top').find('img.img_a').removeClass('display_none');
+    $(this).find('.item_top').find('img.img_b').removeClass('display_block');
+    // $('.img_a').css("display","blcok");
+    // $('.img_b').css("display","blcok");
+  })
+    
+})
+</script>
+</html>
